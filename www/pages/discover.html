@@ -1,0 +1,59 @@
+<h3>{{Test}}</h3>
+<div class="row">
+    <div class="col s12 m12" ng-repeat="kitap in KitapListesi">
+        <div class="card horizontal">
+            <div style="max-width: 41%" class="card-image">
+                <img src="file:///android_asset/www/img/kitap1.jpg">
+            </div>
+            <div class="card-stacked">
+                <div class="card-content" style="padding: 0;">
+                    <ul class="collection with-header" style="margin: 0;    border-bottom-width: 0;">
+                        <li class="collection-header" style="padding-left: 10px;">
+                            <h5>{{kitap.Ad}}</h5>
+
+                            <div class="fixed-action-btn horizontal click-to-toggle" style="position: absolute; right: 5px; top:5px;">
+                                <a class="btn-floating btn red"><i class="material-icons">add</i></a>
+                                <ul>
+                                    <li><a class="btn-floating yellow darken-1"><i class="material-icons">local_library</i></a></li>
+                                    <li><a class="btn-floating green"><i class="material-icons">library_books</i></a></li>
+                                </ul>
+                            </div>
+
+
+
+                        </li>
+                        <li class="collection-item" style="padding-left: 10px;">
+                            <div>
+                                <a style="color:black;" href="#">{{kitap.Yazar}}</a>
+                            </div>
+                        </li>
+                        <li class="collection-item" style="padding-left: 10px; padding-top: 5px; padding-bottom: 5px;">
+                            <div class="row" style="margin-bottom: 0">
+                                <div class="col s6 m4 l2" ng-repeat="tag in kitap.Tur">
+                                    <span class="chip orange">{{tag}}</span>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="collection-item" style="padding-left: 10px;">
+                            <div class="row" style="margin-bottom: 0">
+                                <a style="color: black;" class="valign-wrapper col s6 m4 l2">
+                                    <i style="vertical-align: text-bottom; margin-right: 5px;" class="material-icons red-text">thumb_up</i>
+                                200</a>
+
+                                <a style="color:black;" class="valign-wrapper col s6 m4 l2">
+                                    <i style="vertical-align: middle; margin-right: 5px;" class="material-icons grey-text darken-4-text">thumb_down</i>
+                                0</a>
+
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>

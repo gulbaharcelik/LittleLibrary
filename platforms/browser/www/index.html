@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <!--Import Google Icon Font-->
+    <link href="css/icon.css" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <link href="css/site.css" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Hello World</title>
+</head>
+
+<body ng-app="App" ng-controller="mobil">
+
+
+    <nav>
+        <div class="nav-wrapper red">
+            <a href="#" style="height: 100%;" class="brand-logo center"><img class="responsive-img" style="height: 100%;" src="img/logoBeyaz.png"></a>        
+            <ul class="left">
+                <li><a style="margin: 0px;" href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <ul id="slide-out" class="side-nav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="img/office.jpg">
+                </div>
+                <a href="#!user"><img class="circle" src="img/profil.jpg"></a>
+                <a href="#!name"><span class="white-text name">ÇelikNaz</span></a>
+                <a href="#!email"><span class="white-text email">gulbahar.celik18@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a class="subheader">Okumalarım</a></li>
+        <li><a href="#!"><i class="material-icons">stars</i>Keşfet</a></li>
+        <li><a href="#!"><i class="material-icons">local_library</i>Kütüphanem</a></li>
+        <li><a href="#!"><i class="material-icons">library_books</i>Okuma Listem</a></li>
+        <li><a href="#!"><i class="material-icons">thumbs_up_down</i>Değerlendirmelerim</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Kişiler</a></li>
+        <li><a href="#!"><i class="material-icons">person_add</i>Kişileri Bul</a></li>
+        <li><a href="#!"><i class="material-icons">person_pin</i>Takip Ettiklerim</a></li>
+        <li><a href="#!"><i class="material-icons">group</i>Takipçilerim</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Hesap</a></li>
+        <li><a href="#!"><i class="material-icons">insert_chart</i>Okuma İstatistiklerim</a></li>
+        <li><a href="#!"><i class="material-icons">settings</i>Ayarlar</a></li>
+        <li><a href="#!"><i class="material-icons">exit_to_app</i>Çıkış</a></li>
+    </ul>
+
+    <div class="background-image"></div>
+    <div class="app container">
+        <div>
+            {{Test}}
+            {{Test2}}
+        </div>
+        <div>
+            <discover-component></discover-component>
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
